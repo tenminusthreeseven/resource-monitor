@@ -1,4 +1,4 @@
-Resource Monitor - Easy Guide
+#Resource Monitor - Easy Guide
 What is this?
 
 This is a Python script that watches your computer or server.
