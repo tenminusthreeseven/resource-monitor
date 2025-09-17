@@ -1,12 +1,12 @@
 # Resource Monitor - Easy Guide
-What is this?
+## What is this?
 
 This is a Python script that watches your computer or server.
 It checks CPU usage (how hard your computer is working) and memory usage (how much space your computer is using).
 
 If your computer is working too hard, it will send you an email alert so you can fix it early.
 
-Features
+## Features
 
 Checks CPU and memory every 5 minutes.
 
@@ -35,7 +35,7 @@ Install psutil (a Python tool to check CPU and memory):
 pip install psutil
 
 
-Email setup:
+## Email setup:
 
 Don’t use your normal email password.
 
@@ -65,7 +65,7 @@ Run the script:
 
 python3 resourcemonitor.py
 
-On Windows
+## On Windows
 
 Open Notepad (or any text editor like VS Code).
 
@@ -87,7 +87,7 @@ Use the cd command to go to your folder, e.g.:
 cd C:\Users\YourName\Desktop
 
 
-Run the script:
+## Run the script:
 
 python resourcemonitor.py
 
@@ -106,7 +106,7 @@ server_monitor.log
 
 You can open this file to see when your computer was busy.
 
-Tips
+## Tips
 
 Keep your computer connected to the internet so the email alerts work.
 
