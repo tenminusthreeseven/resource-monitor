@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 
 CPU_THRESHOLD = 80   
 MEMORY_THRESHOLD = 75  
-CHECK_INTERVAL = 300   
+CHECK_INTERVAL = 300000 
 EMAIL_COOLDOWN = 43200 
 
 EMAIL_FROM = "your_email@gmail.com"
