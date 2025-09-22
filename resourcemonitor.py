@@ -7,17 +7,16 @@ from email.mime.multipart import MIMEMultipart
 
 CPU_THRESHOLD = 80   
 MEMORY_THRESHOLD = 75  
-CHECK_INTERVAL = 300000 
-EMAIL_COOLDOWN = 43200 
+CHECK_INTERVAL = 12 * 60 * 60  
+EMAIL_COOLDOWN = 12 * 60 * 60  
 
-EMAIL_FROM = "your_email@gmail.com"
-EMAIL_TO = "recipient_email@example.com"
-EMAIL_PASSWORD = "your_app_password"
+EMAIL_FROM = "your_email@gmail.com"   #write your email
+EMAIL_TO = "recipient_email@example.com"   #write your email
+EMAIL_PASSWORD = "your_app_password"    #on 2 step auth. and get a app password don't use your gmail password
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
 LOG_FILE = "server_monitor.log"
-
 
 logging.basicConfig(filename=LOG_FILE,
                     level=logging.INFO,
@@ -64,4 +63,4 @@ if __name__ == "__main__":
 
     while True:
         last_email_sent = check_system_resources(last_email_sent)
-        time.sleep(CHECK_INTERVAL)
+        time.sleep(CHECK_INTERVAL)  # Sleep for 12 hours before next check
