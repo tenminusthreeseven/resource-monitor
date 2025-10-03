@@ -10,7 +10,7 @@ If your computer is working too hard, it will send you an email alert so you can
 
 Checks CPU and memory every 5 minutes.
 
-Sends an email if:
+Sends an email if: 
 
 CPU usage > 80%
 
